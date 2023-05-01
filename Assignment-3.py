@@ -254,7 +254,6 @@ def main():
 # input_token_index=27
 # target_token_index=67
 
-# main()
 
 
 class Encoder(nn.Module):
