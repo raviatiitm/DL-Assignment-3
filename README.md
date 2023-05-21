@@ -2,12 +2,12 @@
 
 ## Question 1
 
-1.The data is uploaded to colab and is read by the ipynb file.
-2.For the task of transliteration, I used the Hindi Language dataset.
-3.Read the train, valid, and test data using pandas.
-4.First, i did some data processing
-5.created Encoder, Decoder, and train functions.
-6.code is flexible so that cell,no_of_layers,input_embedding_size,batchsize,hidden_size can be changed and passed as parameters.
+1.The data is uploaded to colab and is read by the ipynb file.<br>
+2.For the task of transliteration, I used the Hindi Language dataset.<br>
+3.Read the train, valid, and test data using pandas.<br>
+4.First, i did some data processing<br>
+5.created Encoder, Decoder, and train functions.<br>
+6.code is flexible so that cell,no_of_layers,input_embedding_size,batchsize,hidden_size can be changed and passed as parameters.<br>
 
 
 ## Question 2
