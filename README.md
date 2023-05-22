@@ -123,7 +123,7 @@ test_loss,test_accuracy,predictions = Evaluate(True,test_encoder_input_data,test
 
 - Using this predictions which is a dataframe having columns as original and predicted hindi words .
 
-- Store this using to_excel method of pandas into a folder Prediction_vanilla.
+- Store this using to_excel method of pandas into a folder Prediction_Attention.
   
 ## Instructions about train.py
 
