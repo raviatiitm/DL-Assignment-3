@@ -47,7 +47,7 @@ An Instance of Encoder is as follows:
 
 It can be implemented using the following parameters:
 
--cell = LSTM or GRU or RNN
+- cell = LSTM or GRU or RNN
 
 - embedding_size = Embedding size required to get a representation of a character.
 
