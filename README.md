@@ -159,6 +159,11 @@ test_loss,test_accuracy,predictions = Evaluate(True,test_encoder_input_data,test
 - Using this predictions which is a dataframe having columns as original and predicted hindi words .
 
 - Store this using to_excel method of pandas into a folder Prediction_Attention.
+
+- While creating attention heatmap using attn_matrix function need to specify the path to nirmala.ttf for rendering devnagari text in matplotlib.
+
+``` python
+```
   
 ## Instructions about train.py
 
