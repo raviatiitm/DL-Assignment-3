@@ -99,13 +99,13 @@ getValidation is a function that gives us the validation accuracy and validation
 - no_of_layers = no of stacked RNN or LSTM or GRU
 
 ``` python
-
+   test_loss,test_accuracy,predictions = getValidation(attention,test_encoder_input_data,test_decoder_input_data,Encoder,Decoder,batchsize,hidden_size,embedding_size,no_of_layers)
 ```
 
 Evaluate is a function that gives us test accuracy and test loss and takes the same parameters as the getValidation function.
 
 ``` python
-
+   test_loss,test_accuracy,predictions = Evaluate(attention,test_encoder_input_data,test_decoder_input_data,Encoder,Decoder,batchsize,hidden_size,embedding_size,no_of_layers)
 
 ```
 
