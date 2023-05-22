@@ -160,10 +160,18 @@ test_loss,test_accuracy,predictions = Evaluate(True,test_encoder_input_data,test
 
 - Store this using to_excel method of pandas into a folder Prediction_Attention.
 
-- While creating attention heatmap using attn_matrix function need to specify the path to nirmala.ttf for rendering devnagari text in matplotlib.
+- While creating attention heatmap using attentionplot function need to specify the path to nirmala.ttf for rendering devnagari text in matplotlib.
 
 ``` python
+attentionplot(True,test_eng_word,test_hin_word,Encoder1,Decoder1,1,hidden_size,char_embed_size,no_of_layers,True)]
 ```
+Here the parameters are:
+
+- Attention = boolean value always true as attention is required for making attention heatmap.
+
+- Batchsize = 1 as creating 1 attention heatmap at a time and putting it into a  3X3 subplots.
+
+- other parameters are same as getValidation
   
 ## Instructions about train.py
 
