@@ -6,13 +6,13 @@
 2.For the task of transliteration, I used the Hindi Language dataset.<br>
 3.Read the train, valid, and test data using pandas.<br>
 4.First, i did some data processing<br>
-5.created Encoder, Decoder, and train functions.<br>
+5.created Encoder, Decoder Classes and train functions.<br>
 6.code is flexible so that cell,no_of_layers,input_embedding_size,batchsize,hidden_size can be changed and passed as parameters.<br>
 
 
 ## Question 2
 
-1.Created Functions for Encoder,Decoder,getValidation(evaluates the validation data),vanilla function(used in sweeps) and sweep configuration
+1.Created Classes for Encoder,Decoder and getValidation(evaluates the validation data) function,vanilla function(used in sweeps) and sweep configuration
 
 The sweep configuration is :
 ```python
@@ -75,6 +75,41 @@ The model can be trained using the `train` function.
 ```python
     Encoder,Decoder = train(cell,batchsize,hidden_size,embedding_size,no_of_layers,dropout,epochs)
 ```
+
+### Created getValidation and Evaluate functions:
+
+getValidation is a function that gives us the validation accuracy and validation loss and  takes the following parameters:
+
+- attention = Boolean value denoting attention mechanisms applied or not.
+
+- test_encoder_input_data = Tensor of English characters index
+
+- test_decoder_input_data = Tensor of Hindi characters index
+
+- Encoder = Instance of Encoder class
+
+- Decoder = Instance of Decoder class
+
+- batchsize = batchsize applied
+
+- hidden_size = size of the cell state
+
+- embedding_size = Embedding size applied on the input to RNN or LSTM or GRU
+
+- no_of_layers = no of stacked RNN or LSTM or GRU
+
+``` python
+
+```
+
+Evaluate is a function that gives us test accuracy and test loss and takes the same parameters as the getValidation function.
+
+``` python
+
+
+```
+
+
 
 ## Question 4
 
