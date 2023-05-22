@@ -2,12 +2,14 @@
 import torch
 import pandas as pd
 import numpy as np
+import wandb
 import matplotlib.pyplot as plt
 import os
 import torch
 import random
 import torchvision
 import zipfile
+import argparse
 from torchvision.datasets.utils import download_url
 from torch.utils.data import random_split
 from torchvision.datasets import ImageFolder
@@ -99,12 +101,13 @@ def createDictionary(input_tokens, target_tokens):
     reverse_target_char_index = dict((i, char) for char, i in target_token_index.items())
     return input_token_index,target_token_index,reverse_input_char_index,reverse_target_char_index
 
+
 #get the training words as an array from train data
-train_hindi_words, train_english_words =getWords(train_path)
+train_hindi_words, train_english_words =getWords('/content/hin_train.csv')
 #get validation words
-val_hindi_words, val_english_words =getWords(val_path)
+val_hindi_words, val_english_words =getWords('/content/hin_valid.csv')
 #get test words
-test_hindi_words, test_english_words =getWords(test_path)
+test_hindi_words, test_english_words =getWords('/content/hin_test.csv')
   
 #get the characters from train and val and test dataset
 train_eng_characters, train_num_encoder_tokens, train_max_enc_len = getChar(train_english_words)
